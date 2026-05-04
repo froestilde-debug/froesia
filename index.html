@@ -34,7 +34,6 @@
     overflow-x: hidden;
   }
 
-  /* Background grid */
   body::before {
     content: '';
     position: fixed;
@@ -46,7 +45,6 @@
     pointer-events: none;
   }
 
-  /* Glow */
   body::after {
     content: '';
     position: fixed;
@@ -72,7 +70,6 @@
     to   { opacity: 1; transform: translateY(0); }
   }
 
-  /* Logo */
   .logo {
     text-align: center;
     margin-bottom: 0.5rem;
@@ -99,7 +96,6 @@
     margin-top: 0.4rem;
   }
 
-  /* Divider */
   .divider {
     width: 40px;
     height: 1.5px;
@@ -108,7 +104,6 @@
     opacity: 0.6;
   }
 
-  /* Headline */
   .headline {
     text-align: center;
     margin-bottom: 0.6rem;
@@ -135,7 +130,6 @@
     line-height: 1.6;
   }
 
-  /* Cards */
   .cards {
     display: flex;
     flex-direction: column;
@@ -173,7 +167,7 @@
     flex-shrink: 0;
   }
 
-  .icon-pdf { background: rgba(0,180,216,0.15); }
+  .icon-chat { background: rgba(16,163,127,0.15); }
   .icon-skill { background: rgba(255,200,80,0.12); }
 
   .card-icon svg { width: 22px; height: 22px; }
@@ -185,7 +179,7 @@
     font-weight: 500;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--teal);
+    color: #10A37F;
     margin-bottom: 0.3rem;
   }
 
@@ -218,7 +212,6 @@
     transform: translateX(3px);
   }
 
-  /* Note */
   .note {
     margin-top: 1.8rem;
     text-align: center;
@@ -233,7 +226,6 @@
     text-decoration: none;
   }
 
-  /* Compat badge */
   .compat {
     display: flex;
     justify-content: center;
@@ -268,7 +260,6 @@
     background: transparent;
   }
 
-  /* Stagger cards */
   .card:nth-child(1) { animation: fadeUp 0.7s 0.15s ease both; }
   .card:nth-child(2) { animation: fadeUp 0.7s 0.28s ease both; }
 
@@ -302,20 +293,17 @@
 
   <div class="cards">
 
-    <!-- Card 1: PDF -->
-    <a class="card" href="https://drive.google.com/file/d/1G0poYcpaIoOa7CMpAFHlsmE7HdU232q4/view?usp=drive_link" target="_blank" rel="noopener">
-      <div class="card-icon icon-pdf">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#00B4D8" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
-          <polyline points="14,2 14,8 20,8"/>
-          <line x1="12" y1="18" x2="12" y2="12"/>
-          <line x1="9" y1="15" x2="15" y2="15"/>
+    <!-- Card 1: GPT -->
+    <a class="card" href="https://chatgpt.com/g/g-69f681dbac7881918e49c9b915008d45-froes-ia-triagem-raciocinio-pre-imagem" target="_blank" rel="noopener">
+      <div class="card-icon icon-chat">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#10A37F" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
         </svg>
       </div>
       <div class="card-info">
-        <div class="card-tag">Guia em PDF</div>
-        <div class="card-title">Crie seu Custom GPT no ChatGPT</div>
-        <div class="card-desc">Passo a passo completo + prompt pronto para colar. Configure em menos de 5 minutos.</div>
+        <div class="card-tag">Custom GPT</div>
+        <div class="card-title">Froes.IA Triagem — abrir no ChatGPT</div>
+        <div class="card-desc">GPT público. Acesse diretamente e comece a organizar históricos clínicos agora.</div>
       </div>
       <div class="card-arrow">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
